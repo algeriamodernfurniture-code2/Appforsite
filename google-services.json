@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727045927684",
+    "project_id": "devdzustudy",
+    "storage_bucket": "devdzustudy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727045927684:android:2835615e7592f8f7971651",
+        "android_client_info": {
+          "package_name": "com.dzustudy.academy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ewi_MsWXh2JNJOJbXTLYmk2zGJ-5IZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
