@@ -1,0 +1,27 @@
+name: Extract Zip File
+on:
+  push:
+    paths:
+      - 'uploads/**.zip'
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Unzip Archive
+        run: |
+          cd uploads
+          unzip *.zip
+          rm *.zip
+          
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions@users.noreply.github.com"
+          git config --local user.name "github-actions"
+          git add .
+          git commit -m "Automatically extracted zip file"
+          git push
